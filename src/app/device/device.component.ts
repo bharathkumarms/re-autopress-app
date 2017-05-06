@@ -9,7 +9,7 @@ import {Component} from '@angular/core'
 })
 export class DeviceComponent{
     isIn = false;   // store state
-    toggleStateRecipe() { // click handler
+    toggleStateDevice() { // click handler
         let bool = this.isIn;
         this.isIn = bool === false ? true : false; 
     }
