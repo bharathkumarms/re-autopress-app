@@ -65,4 +65,10 @@ public lineChartData:Array<any> = [
   public chartHovered(e:any):void {
     console.log(e);
   }
+
+  isIn = false;   // store state
+    toggleStateHome() { // click handler
+        let bool = this.isIn;
+        this.isIn = bool === false ? true : false; 
+    }
 }

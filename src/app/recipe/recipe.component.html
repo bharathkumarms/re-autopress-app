@@ -1,0 +1,119 @@
+<div class="jumbotron">
+    <div class="row">
+    <div class="col-sm-5">
+
+<form>
+    <h3>Recipe Settings</h3>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Recipe Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Recipe Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Window1</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">X1 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Y1 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Window2</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">X1 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Y1 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+</form>
+    </div>
+    <div class="col-sm-5">
+
+<form>
+    <br/><br/><br/>
+  
+  <div class="form-group">
+    <label for="exampleSelect1">No Of Windows</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">X1 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Y1 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">X2 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Y2 Value</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Enable Recipe
+    </label>
+  </div>
+</form>
+
+    </div>
+    <div class="col-sm-2">
+        <br/><br/><br/>
+        <div class="form-group">
+    <label for="exampleSelect2">Recipe LIst</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      
+    </select>
+  </div>
+    </div>
+    </div>
+</div>
+
+<div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <button type="button" 
+                        class="navbar-toggle collapsed"
+                        (click)="toggleStateRecipe()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Rameshwar Engineering</a>
+        </div>
+         <div class="collapse navbar-collapse"
+              [ngClass]="{ 'in': isIn }">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Add</a></li>
+              <li><a href="#">List</a></li>
+              <li><a href="#">Remove</a></li>
+              <li><a href="#">Save</a></li>
+              <li><a href="#">Cancel</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>

@@ -1,0 +1,134 @@
+<div class="jumbotron">
+    <div class="row">
+    <div class="col-sm-6">
+
+<form>
+    <br/>
+<fieldset class="form-group">
+    <legend>Trigger Mode</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Soft
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Manual
+      </label>
+    </div>
+    
+  </fieldset>
+<legend>Start Trigger Logic</legend>
+
+  <div class="form-group">
+    <label for="exampleSelect1">Start Trigger Source</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <fieldset class="form-group">
+    <legend>Trigger Mode</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        <=
+        <input style="display:inherit;width:50px;margin-left:46px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        >=
+        <input style="display:inherit;width:50px;margin-left:46px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Range
+        <input style="display:inherit;width:50px;margin-left:20px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+        <input style="display:inherit;width:50px;margin-left:20px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+      </label>
+    </div>
+  </fieldset>
+</form>
+    </div>
+    <div class="col-sm-6">
+
+<form style="margin-top:141px">
+    <legend>Stop Trigger Logic</legend>
+
+  <div class="form-group">
+    <label for="exampleSelect1">Start Trigger Source</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <fieldset class="form-group">
+    <legend>Trigger Mode</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        <=
+        <input style="display:inherit;width:50px;margin-left:46px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        >=
+        <input style="display:inherit;width:50px;margin-left:46px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        Range
+        <input style="display:inherit;width:50px;margin-left:20px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+        <input style="display:inherit;width:50px;margin-left:20px" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" />
+      </label>
+    </div>
+  </fieldset>
+</form>
+
+    </div>
+    
+    </div>
+</div>
+<div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <button type="button" 
+                        class="navbar-toggle collapsed"
+                        (click)="toggleStateTrigger()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Rameshwar Engineering</a>
+        </div>
+         <div class="collapse navbar-collapse"
+              [ngClass]="{ 'in': isIn }">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Add</a></li>
+              <li><a href="#">List</a></li>
+              <li><a href="#">Remove</a></li>
+              <li><a href="#">Save</a></li>
+              <li><a href="#">Cancel</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>

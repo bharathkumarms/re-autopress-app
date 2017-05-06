@@ -26,3 +26,29 @@
   </div>
 </div>
 </div>
+<div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <button type="button" 
+                        class="navbar-toggle collapsed"
+                        (click)="toggleStateHome()">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Rameshwar Engineering</a>
+        </div>
+         <div class="collapse navbar-collapse"
+              [ngClass]="{ 'in': isIn }">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Manual Start</a></li>
+              <li><a href="#">Manual Stop</a></li>
+              <li><a href="#">Cycle Start</a></li>
+              <li><a href="#">Shut Down</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>

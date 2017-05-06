@@ -10,17 +10,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">RE Autopress</a>
+            <a class="navbar-brand">Autopress</a>
         </div>
          <div class="collapse navbar-collapse"
               [ngClass]="{ 'in': isIn }">
             <ul class="nav navbar-nav">
                 <li><a [routerLink]="['/home']"><span class="glyphicon glyphicon-asterisk"></span> Home</a></li>
-                <li><a href=""> <span class="glyphicon glyphicon-plus"></span> Sensors</a></li>
+                <li><a [routerLink]="['/sensor']"> <span class="glyphicon glyphicon-plus"></span> Sensors</a></li>
                 <li><a href=""> <span class="glyphicon glyphicon-minus"></span> File</a></li>
-                <li><a href=""> <span class="glyphicon glyphicon-eur"></span> Recipe</a></li>
-                <li><a href=""> <span class="glyphicon glyphicon-cloud"></span> Trigger</a></li>
-                <li><a href=""> <span class="glyphicon glyphicon-envelope"></span> Device</a></li>
+                <li><a [routerLink]="['/recipe']"> <span class="glyphicon glyphicon-eur"></span> Recipe</a></li>
+                <li><a [routerLink]="['/trigger']"> <span class="glyphicon glyphicon-cloud"></span> Trigger</a></li>
+                <li><a [routerLink]="['/device']"> <span class="glyphicon glyphicon-envelope"></span> Device</a></li>
                 <li><a href=""> <span class="glyphicon glyphicon-star"></span> Test</a></li>
                 <li><a href=""> <span class="glyphicon glyphicon-user"></span> Help</a></li>
             </ul>
